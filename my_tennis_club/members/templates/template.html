@@ -2,11 +2,17 @@
 <html>
 <body>
 
-{% for x in fruits %}
-  <h1>{{ x }}</h1>
-{% endfor %}
+<h1>{{ name|center:20 }}</h1>
 
-<p>In views.py you can see what the fruits variable looks like.</p>
+<p>In HTML the display does not show more than one space,
+but if you view the page source you will see that there are
+20 characters between &lt;h1&gt; and &lt;/h1&gt;.</p>
+
+<p>Or, to demonstrate we can use a textarea to see that "Tobias" is center aligned:</p>
+
+<textarea>{{ name|center:20 }}</textarea>
+
+<p>In views.py you can see what the name variable looks like.</p>
 
 </body>
-</html>
+</html>    

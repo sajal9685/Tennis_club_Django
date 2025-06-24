@@ -12,7 +12,7 @@
   
   <ul>
     {% for x in mymembers %}
-      <li><a href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a></li>
+      <li><a href="details/{{ x.id }}" style='color:{% cycle 'red' 'blue' %}'>{{ x.firstname }} {{ x.lastname }}</a></li>
     {% endfor %}
   </ul>
 {% endblock %}
