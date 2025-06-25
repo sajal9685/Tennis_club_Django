@@ -2,17 +2,25 @@
 <html>
 <body>
 
-<h1>{{ name|center:20 }}</h1>
+<p>The queryset object:</p>
+{{ mymembers }}
 
-<p>In HTML the display does not show more than one space,
-but if you view the page source you will see that there are
-20 characters between &lt;h1&gt; and &lt;/h1&gt;.</p>
+<p>Loop through the items:</p>
 
-<p>Or, to demonstrate we can use a textarea to see that "Tobias" is center aligned:</p>
-
-<textarea>{{ name|center:20 }}</textarea>
-
-<p>In views.py you can see what the name variable looks like.</p>
+<table border='1'>
+  <tr>
+    <th>ID</th>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  {% for x in mymembers %}
+    <tr>
+      <td>{{ x.id }}</td>
+      <td>{{ x.firstname }}</td>
+      <td>{{ x.lastname }}</td>
+    </tr>
+  {% endfor %}
+</table>
 
 </body>
-</html>    
+</html>        
