@@ -20,8 +20,6 @@ class employees_view(APIView):
             return Response(serializer.data,status=status.HTTP_201_CREATED)
         else :
             return Response (serializer.errors,status=status.HTTP_406_NOT_ACCEPTABLE)
-
-
 class employees_detail(APIView):
     def get_object(self,pk):
         try:

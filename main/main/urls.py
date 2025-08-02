@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/',include('func_serialize.urls')),
     path('api/v1/',include('class_serialize.urls')),
+    path('api/v1/',include('model_mixin.urls')),
 ]

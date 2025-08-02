@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'func_serialize',
     'class_serialize',
+    'model_mixin',
 ]
 
 MIDDLEWARE = [
