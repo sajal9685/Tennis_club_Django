@@ -23,4 +23,6 @@ urlpatterns = [
     path('api/v1/',include('class_serialize.urls')),
     path('api/v1/',include('model_mixin.urls')),
     path('api/v1/',include('model_generic.urls')),
+    path('api/v1/',include('class_viewset.urls')),
+
 ]
