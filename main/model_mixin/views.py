@@ -5,7 +5,6 @@ from .serializers import TeacherSerializer
 from .models import Teachers
 from rest_framework import generics
 
-
 # Create your views here.
 class teachers_view(mixins.ListModelMixin,mixins.CreateModelMixin,generics.GenericAPIView):
     queryset=Teachers.objects.all()

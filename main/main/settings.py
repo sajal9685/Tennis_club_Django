@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'func_serialize',
     'class_serialize',
     'model_mixin',
+    'model_generic',
 ]
 
 MIDDLEWARE = [
